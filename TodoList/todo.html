@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+            TO DO LIST
+        </title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background: #f2f2f2;
+                padding: 20px;
+            }
+            #todo-container{
+                background: white;
+                padding: 20px;
+                max-width: 400px;
+                margin:auto;
+                border-radius: 10px;
+                box-shadow: 5px 5px 10px rgba(10,10,10,0.5);
+            }
+            input[type="text"]
+            {
+                width: 70%;
+                padding: 10px;
+
+            }
+            button{
+                padding: 10px;
+            }
+            ul{
+                list-style: none;  /* ul as a tag selctor*/
+                padding: 0;
+            }
+            li{
+                padding: 5px 0;       /* inside ul we gonna create li..so we can add styles here */
+                display: flex;
+                justify-content: space-between; /*first item goes left,last one go right,rest evenly spaced*/
+            }
+            li button{
+                margin-left: 10px;
+                background: #ff4d4d;
+                color: aliceblue;
+                border:none;
+                border-radius: 5px;
+                cursor: pointer;
+                justify-content: space-between ;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="todo-container">
+            <h2>My ToDo List</h2>
+            <input type="text" id="todo-input" placeholder="Enter the task"/>
+            <button onclick="addTodo()">Add</button>
+            <ul id="todo-list"></ul>
+        </div>
+        <script src="scriptTodolist.js"></script>
+    </body>
+</html>

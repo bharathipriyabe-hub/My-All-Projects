@@ -1,0 +1,95 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+    nav{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    
+}
+li,h1,ul{
+    display: inline;
+}
+li{
+    padding: 10px;
+    color: yellow;
+   }
+   ul{
+    margin-left: 60%;
+   }
+   li:hover{
+    color: white;
+    cursor: pointer;
+   }
+   .searchbar{
+    padding: 50px;
+   text-align: center;
+    }
+    input{
+        width: 500px;
+    }
+    .Product{
+        text-align: left;
+        margin-left: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap:20px;
+    }
+    .box1{
+        margin-top: 40px;
+        padding: 10px;
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+        display: inline-block;
+        width: 250px;  
+           
+    }
+    .box2{ 
+        margin-top: 40px;
+        padding: 10px;
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+        display: inline-block;
+        width: 250px;
+        margin-left: 10%;
+        
+    }
+    .box3{
+        margin-top: 40px;
+        padding: 10px;
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+        display: inline-block;
+        width: 250px;
+        margin-left: 10%;
+        
+
+    }
+    .box1:hover{
+        background-color: burlywood;
+        color: white;
+    }
+    .box2:hover{
+        background-color: olive;
+        color: white;
+    }
+    .box3:hover{
+        background-color:palevioletred;
+        color: white;
+    }
+    .about{
+        padding: 50px;
+    }
+    .contact{
+        background-color: aqua;
+        color:black;
+        padding: 20px;
+    }
+    h2:hover{
+        background-color: white;
+    }

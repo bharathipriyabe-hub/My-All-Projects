@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>PRODUCT LIST</title>
+        <link rel="stylesheet"
+        href ="{{url_for('static',filename='static.css')}}">
+    </head>
+    <body>
+        <h1>PRODUCT LIST</h1>
+        <form action="{{url_for('add_product')}}" method="POST">
+            <input type="text" name="pid" placeholder="ProductID" required>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="price" placeholder="Price" required>
+            <input type="submit" value="submit">
+        </form>
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+            {% for pid,info in products.items() %}
+            <tr>
+                <td>{{pid}}</td>
+                <td>{{info.name}}</td>
+                <td>{{info.price}}</td>
+            <td>
+                <a href="{{url_for('delete_product',pid=pid)}}">Delete</a> |
+                <a href="{{url_for('edit_product',pid=pid)}}">Edit</a>
+            </td>
+            </tr>
+            {% endfor %}
+
+        </table>
+        <br>
+        <a href="{{url_for('home')}}">Home</a>
+
+        
+
+        
+    </body>
+</html>
